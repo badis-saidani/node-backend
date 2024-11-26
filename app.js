@@ -13,7 +13,7 @@ app.get("/api/message", (req, res) => {
 
 
 // Start the serve
-const PORT = 80;
+const PORT = 8080;
 app.listen(PORT, () => {
 	console.log(`Backend server is running on port ${PORT}`);
 });
