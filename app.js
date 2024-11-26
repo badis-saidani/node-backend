@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 // Middleware
-//app.use(cors());
+app.use(cors());
 
 // Route
 app.get("/api/message", (req, res) => {
@@ -13,7 +13,7 @@ app.get("/api/message", (req, res) => {
 
 
 // Start the serve
-const PORT = 3000;
+const PORT = 80;
 app.listen(PORT, () => {
 	console.log(`Backend server is running on port ${PORT}`);
 });
